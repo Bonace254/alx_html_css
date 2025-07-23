@@ -33,3 +33,28 @@ header, footer {
   text-align: center;
 }
 
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-right: 1rem;
+  color: #37474f;
+}
+
+article {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #fdfdfd;
+  border-left: 4px solid #2196f3;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  background-color: #455a64;
+  color: white;
+}
+
+footer {
+  background-color: #263238;
+  color: white;
+}
+
