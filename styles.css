@@ -1,0 +1,149 @@
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover,
+.nav a:active {
+  color: #FF6565;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.hero button {
+  background-color: #FF6565;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.hero button:hover,
+.hero button:active {
+  opacity: 0.9;
+}
+
+/* What We Do Section */
+.what-we-do {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.what-we-do h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.services {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.service {
+  flex: 1 1 30%;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.service img {
+  width: 60px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.service h3 {
+  margin: 10px 0;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 30px 0;
+  border-top: 1px solid #ddd;
+  margin-top: 50px;
+  font-size: 14px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 480px) {
+  .header {
+    flex-direction: column;
+  }
+
+  .nav {
+    margin-top: 10px;
+  }
+
+  .nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .services {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service {
+    width: 90%;
+  }
+
+  .hero h1 {
+    font-size: 24px;
+  }
+}
+
